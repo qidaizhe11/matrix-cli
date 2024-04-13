@@ -1,0 +1,39 @@
+{
+  "name": "@matrix/cli",
+  "version": "0.2.18",
+  "description": "matrix cli",
+  "bin": {
+    "matrix-cli": "bin/matrix.js"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "rimraf ./dist",
+    "prepare": "tsc",
+    "build": "tsc",
+    "dev": "tsc -w",
+    "prod": "tsc"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "@matrix/core": "workspace:*",
+    "@matrix/utils": "workspace:*",
+    "chalk": "^4.1.2",
+    "chokidar": "^3.5.3",
+    "commander": "^11.0.0",
+    "fs-extra": "^11.1.1",
+    "glob": "^10.3.1",
+    "inquirer": "^9.2.7",
+    "leven": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "rimraf": "^5.0.1"
+  }
+}

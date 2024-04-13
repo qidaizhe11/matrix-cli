@@ -1,0 +1,13 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "strictNullChecks": true,
+    "module": "ESNext",
+    "target": "ES2015",
+    "declaration": true,
+    "esModuleInterop": true
+  }
+}

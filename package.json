@@ -1,0 +1,36 @@
+{
+  "name": "wex-h5",
+  "version": "0.1.0",
+  "description": "wex h5: matrix",
+  "private": true,
+  "scripts": {
+    "lint": "eslint . --fix",
+    "format": "prettier --write .",
+    "prepare": "husky install",
+    "release": "cross-env HUSKY_SKIP_HOOKS=1 lerna publish"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "cross-env": "7.0.3",
+    "eslint": "^8.44.0",
+    "eslint-define-config": "^1.21.0",
+    "eslint-plugin-node": "^11.1.0",
+    "fs-extra": "^11.1.1",
+    "husky": "^8.0.3",
+    "lerna": "^7.1.1",
+    "lint-staged": "^13.2.3",
+    "prettier": "^2.8.8",
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "tslib": "^2.6.0",
+    "typescript": "^5.1.6"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": "eslint --cache --fix",
+    "*.{js,ts,css,md}": "prettier --write"
+  }
+}

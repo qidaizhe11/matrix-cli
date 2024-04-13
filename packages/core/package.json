@@ -1,0 +1,48 @@
+{
+  "name": "@matrix/core",
+  "version": "0.2.15",
+  "description": "matrix core",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "prebuild": "rimraf ./dist",
+    "prepare": "pnpm run rollup --environment NODE_ENV:production",
+    "build": "pnpm run rollup --environment NODE_ENV:production",
+    "dev": "pnpm run rollup --environment NODE_ENV:development -w",
+    "rollup": "rollup -c"
+  },
+  "dependencies": {
+    "@babel/core": "^7.22.6",
+    "@babel/generator": "^7.22.5",
+    "@babel/parser": "^7.22.6",
+    "@babel/template": "^7.22.5",
+    "@babel/traverse": "^7.22.6",
+    "@babel/types": "^7.22.5",
+    "@matrix/utils": "workspace:*",
+    "domhandler": "^5.0.3",
+    "fs-extra": "^11.1.1",
+    "glob": "^10.3.1",
+    "htmlparser2": "^9.0.0",
+    "lodash": "^4.17.21",
+    "postcss": "^8.4.12",
+    "postcss-selector-parser": "^6.0.10",
+    "resolve": "^1.22.1",
+    "strip-comments": "^2.0.1",
+    "tapable": "^2.2.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/babel__traverse": "^7.20.1",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.26.1"
+  }
+}

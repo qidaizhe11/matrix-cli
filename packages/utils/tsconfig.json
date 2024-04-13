@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.root.json",
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ESNext",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "lib": ["ES6", "ESNext"],
+    "noImplicitThis": true,
+  },
+  "include": ["src"]
+}

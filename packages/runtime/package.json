@@ -1,0 +1,13 @@
+{
+  "name": "@matrix/runtime",
+  "version": "0.2.7",
+  "description": "matrix 运行时框架",
+  "main": "dist/index.es.js",
+  "scripts": {
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "",
+  "license": "MIT"
+}
